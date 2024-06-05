@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="uz">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>MIRJALOL AHMADJONOV</title>
+	<link rel="shortcut icon" href="assets/images/logo.jpg" type="image/x-icon">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+		integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+		crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<link rel="stylesheet" href="styles/main.css">
+</head>
+
+<body>
+
+	<header class="header">
+		<a href="#" class="logo">
+			<img src="assets/images/logo.jpg" alt="logo">
+		</a>
+		<i class="fa-solid fa-bars" id="menu-icon" onclick="toggleMenu()"></i>
+		<nav class="navbar" id="menuList">
+			<a href="#home" class="active">HOME</a>
+			<a href="#portfolio">PORTFOLIO</a>
+			<a href="#services">SERVICES</a>
+			<a href="#testimonials">TESTIMONIALS</a>
+			<a href="#contact">CONTACT</a>
+		</nav>
+	</header>
+
+
+	<section class="home" id="home">
+		<div class="home-img">
+			<img src="assets/images/guy2.jpg" alt="home-img">
+		</div>
+		<div class="home-content">
+			<h1>Hi, It's <span>Amir</span></h1>
+			<h3 class="typing-text">I'm a <span id="typewriter"></span><span id="cursor"></span></h3>
+			<p>Mirjalol Ahmadjonov (AMIR) ─ a developer with more than 3 years of experience in both web and mobile
+				development is ready to help you out!🚀✨
+			</p>
+			<div class="socnets">
+				<a href="https://www.linkedin.com/in/mirjalol-ahmadjonov-94653b311" target="_blank" class="linkedin"><i
+						class="fa-brands fa-linkedin"></i></a>
+				<!-- <a href="https://github.com/mirjalolahmadjonov" target="_blank" class="github"><i
+						class="fa-brands fa-github"></i></a> -->
+				<!-- <a href="https://x.com/mirjalol0613" target="_blank" class="twitter"><i
+						class="fa-brands fa-x-twitter"></i></a> -->
+				<a href="https://t.me/mirjalolahmadjonov" target="_blank" class="telegram"><i
+						class="fa-brands fa-telegram"></i></a>
+				<!-- <a href="https://instagram.com/mirjalolahmadjonoff" target="_blank" class="instagram"><i
+						class="fa-brands fa-instagram"></i></a> -->
+				<a href="mailto:mirjalolahmadjonoff@gmail.com" class="telegram"><i
+						class="fa-regular fa-envelope"></i></a>
+			</div>
+			<a href="tel:+998930900507" class="btn">Hire Me</a>
+		</div>
+	</section>
+	<section class="services" id="services">
+		<h2 class="section-title">Services</h2>
+		<div class="services-container">
+			<div class="service-card">
+				<img src="./assets/images/frontend-development-technologies.svg" alt="frontend development">
+				<div class="service-info">
+					<h4 class="card-title">
+						Frontend Dev
+					</h4>
+					<p>I specialize in frontend development, utilizing a range of technologies including HTML, CSS,
+						JavaScript, and frameworks such as React and Vue.js. With a keen eye for design and a commitment
+						to excellence, I craft polished web experiences that elevate brands and engage users. </p>
+				</div>
+			</div>
+			<div class="service-card">
+				<img src="./assets/images/backend.svg" alt="backend development">
+				<div class="service-info">
+					<h4 class="card-title">
+						Backend Dev
+					</h4>
+					<p>Harnessing the power of server-side technologies such as Node.js, Python, and SQL databases, I
+						build robust and scalable backend solutions to drive your applications forward. From API
+						development to database management, I ensure seamless functionality and optimal performance.</p>
+				</div>
+			</div>
+			<div class="service-card">
+				<img src="./assets/images/uxuidesign.svg" alt="ui and ux design">
+				<div class="service-info">
+					<h4 class="card-title">
+						UI/UX Design
+					</h4>
+					<p>With a passion for user-centric design, I craft captivating interfaces that blend aesthetics with
+						functionality. From wireframes to prototypes, I meticulously refine every detail to ensure
+						intuitive and delightful user experiences. </p>
+				</div>
+			</div>
+			<div class="service-card">
+				<img src="./assets/images/graphicdesign.svg" alt="graphic design">
+				<div class="service-info">
+					<h4 class="card-title">
+						Graphic Design
+					</h4>
+					<p>Transforming ideas into visual masterpieces, I specialize in graphic design that captivates and
+						inspires. With expertise in Adobe Creative Suite and a keen eye for detail, I craft stunning
+						visuals for branding, marketing materials, and digital media.</p>
+				</div>
+			</div>
+			<div class="service-card">
+				<img src="./assets/images/mobile.svg" alt="mobile development">
+				<div class="service-info">
+					<h4 class="card-title">
+						Mobile App Dev
+					</h4>
+					<p>From concept to deployment, I specialize in crafting mobile applications that deliver seamless
+						experiences across iOS and Android platforms. Leveraging cutting-edge technologies and best
+						practices, I ensure your app stands out in the crowded digital landscape.</p>
+				</div>
+			</div>
+			<div class="service-card">
+				<img src="./assets/images/tester.svg" alt="tester">
+				<div class="service-info">
+					<h4 class="card-title">
+						Software Tester
+					</h4>
+					<p>Ensuring the reliability and quality of software products is my expertise. With meticulous
+						attention to detail and a comprehensive understanding of testing methodologies, I conduct
+						rigorous testing to identify and resolve issues before they impact end users.</p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="contact" id="contact">
+		<h2 class="section-title">Contact <span>Me</span></h2>
+		<form action="mirjalol.uz">
+			<div class="input-box">
+				<input type="text" name="name" placeholder="Name" required>
+				<input type="email" name="email" placeholder="Email">
+				<input type="tel" name="number" placeholder="Phone Number" required>
+				<input type="text" name="subject" placeholder="Subject">
+			</div>
+
+			<textarea name="more" id="more" cols="30" rows="10" placeholder="Your message"></textarea>
+			<button type="submit" class="btn">Send Message</button>
+		</form>
+	</section>
+	<footer>
+		<div class="socnets">
+			<a href="https://www.linkedin.com/in/mirjalol-ahmadjonov-94653b311" target="_blank" class="linkedin"><i
+					class="fa-brands fa-linkedin"></i></a>
+			<a href="https://github.com/mirjalolahmadjonov" target="_blank" class="github"><i
+					class="fa-brands fa-github"></i></a>
+			<a href="https://x.com/mirjalol0613" target="_blank" class="twitter"><i
+					class="fa-brands fa-x-twitter"></i></a>
+			<a href="https://t.me/mirjalolahmadjonov" target="_blank" class="telegram"><i
+					class="fa-brands fa-telegram"></i></a>
+			<a href="https://instagram.com/mirjalolahmadjonoff" target="_blank" class="instagram"><i
+					class="fa-brands fa-instagram"></i></a>
+		</div>
+		<ul>
+			<li><a href="index.html#home">Home</a></li>
+			<li><a href="index.html#services">Service</a></li>
+			<li><a href="#">About</a></li>
+			<li><a href="index.html#contact">Contact</a></li>
+			<li><a href="#">Privacy Policies</a></li>
+		</ul>
+		<p class="copyright">
+			&copy; Mirjalol Ahmadjonov - 2024 &#124; All rights Reserved
+		</p>
+	</footer>
+	<script src="assets/js/scripts.js"></script>
+</body>
+
+</html>
