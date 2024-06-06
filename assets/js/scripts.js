@@ -4,43 +4,47 @@ function toggleMenu() {
     menuList.classList.toggle('active');
 }
 
-// Get all navbar links
+
+let lastScrollY = window.scrollY;
+
+window.addEventListener('scroll', () => {
+    const header = document.querySelector('.header');
+
+    if (window.scrollY > lastScrollY) {
+        header.classList.add('hidden');
+    } else {
+        header.classList.remove('hidden');
+    }
+
+    lastScrollY = window.scrollY;
+});
+
+
 const navbarLinks = document.querySelectorAll('.navbar a');
 
 // Function to highlight the active section in the navbar
 function highlightNavbarLink() {
-    // Get the vertical scroll position of the window
     const scrollPosition = window.scrollY;
-
-    // Loop through each section on the page
     document.querySelectorAll('section').forEach((section) => {
-        // Check if the top of the section is above the current scroll position
         if (scrollPosition >= section.offsetTop - 50 && scrollPosition < section.offsetTop + section.offsetHeight - 50) {
-            // Remove the 'active' class from all navbar links
             navbarLinks.forEach((link) => {
                 link.classList.remove('active');
             });
 
-            // Get the corresponding navbar link for the current section
             const correspondingLink = document.querySelector(`.navbar a[href="#${section.id}"]`);
 
-            // Add the 'active' class to the corresponding navbar link
             if (correspondingLink) {
                 correspondingLink.classList.add('active');
             }
         }
     });
 }
-
-// Add event listener for scroll event
 window.addEventListener('scroll', highlightNavbarLink);
 
-// Call the function initially to highlight the active section on page load
 highlightNavbarLink();
 
 
-// script.js
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
     const phrases = [
         "Web Developer",
         "Mobile Developer",
@@ -50,8 +54,8 @@ document.addEventListener('DOMContentLoaded', function() {
     ];
     let currentPhraseIndex = 0;
     let currentCharIndex = 0;
-    const speed = 100; // Speed in milliseconds for typing
-    const delayBetweenPhrases = 2000; // Delay before starting next phrase in milliseconds
+    const speed = 100;
+    const delayBetweenPhrases = 2000;
 
     function typeWriter() {
         if (currentCharIndex < phrases[currentPhraseIndex].length) {
