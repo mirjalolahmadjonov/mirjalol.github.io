@@ -3,13 +3,14 @@
 
 <head>
 	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>MIRJALOL AHMADJONOV</title>
 	<link rel="shortcut icon" href="assets/images/logo.jpg" type="image/x-icon">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
 		integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
 		crossorigin="anonymous" referrerpolicy="no-referrer" />
 	<link rel="stylesheet" href="styles/main.css">
+	<link rel="stylesheet" href="styles/swiper-bundle.min.css">
 </head>
 
 <body>
@@ -21,18 +22,15 @@
 		<i class="fa-solid fa-bars" id="menu-icon" onclick="toggleMenu()"></i>
 		<nav class="navbar" id="menuList">
 			<a href="#home" class="active">HOME</a>
-			<a href="#portfolio">PORTFOLIO</a>
+			<a href="#about">ABOUT</a>
+			<a href="#projects">PROJECTS</a>
 			<a href="#services">SERVICES</a>
-			<a href="#testimonials">TESTIMONIALS</a>
 			<a href="#contact">CONTACT</a>
 		</nav>
 	</header>
-
+	<!-- HOME -->
 	<section class="home" id="home">
-		<!-- <video autoplay muted loop id="background-video">
-			<source src="./assets/videos/bglive.mp4" type="video/mp4">
-			Your browser does not support HTML5 video.
-		</video> -->
+		<div id="particles-js"></div>
 		<div class="home-img">
 			<div class="blob fadeIn">
 				<svg viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -49,31 +47,180 @@
 					</path>
 				</svg>
 			</div>
-			<img src="assets/images/guy2.jpg" alt="home-img" class="fade-in-left">
+			<img src="assets/images/guy2.jpg" alt="home-img" class=" fadeInLeft">
 		</div>
 		<div class="home-content">
-			<h1 class="fade-in-right">Hi, It's <span>Amir</span></h1>
-			<h3 class="typing-text fade-in-left">I'm a <span id="typewriter"></span><span id="cursor"></span></h3>
-			<p class="home-content slide-in-bottom">Mirjalol Ahmadjonov (AMIR) ─ a developer with more than 3 years of experience in both web and mobile
+			<h1 class="fadeInBottom">Hi, It's <span>Amir</span></h1>
+			<h3 class="typing-text fadeInBottom">I'm a <span id="typewriter"></span><span id="cursor"></span></h3>
+			<p class="fadeInBottom">Mirjalol Ahmadjonov (AMIR) ─ a developer with more than 3 years of
+				experience in both web and mobile
 				development is ready to help you out!🚀✨
 			</p>
-			<div class="socnets zoom-in">
+			<div class="socnets zoomIn">
 				<a href="https://www.linkedin.com/in/mirjalol-ahmadjonov-94653b311" target="_blank" class="linkedin"><i
 						class="fa-brands fa-linkedin"></i></a>
-				<!-- <a href="https://github.com/mirjalolahmadjonov" target="_blank" class="github"><i
-						class="fa-brands fa-github"></i></a> -->
-				<!-- <a href="https://x.com/mirjalol0613" target="_blank" class="twitter"><i
-						class="fa-brands fa-x-twitter"></i></a> -->
 				<a href="https://t.me/mirjalolahmadjonov" target="_blank" class="telegram"><i
 						class="fa-brands fa-telegram"></i></a>
-				<!-- <a href="https://instagram.com/mirjalolahmadjonoff" target="_blank" class="instagram"><i
-						class="fa-brands fa-instagram"></i></a> -->
 				<a href="mailto:mirjalolahmadjonoff@gmail.com" class="telegram"><i
 						class="fa-regular fa-envelope"></i></a>
 			</div>
-			<a href="tel:+998930900507" class="btn zoom-in">Hire Me</a>
+			<a href="tel:+998930900507" class="btn zoomIn">Hire Me</a>
 		</div>
 	</section>
+	<!-- ABOUT -->
+	<div class="skills-container" id="about">
+		<div class="skills">
+			<span><i class="fa-brands fa-html5 fa-flip" style="color: #ff7b00;"></i>&nbsp;HTML5</span>
+			<span><i class="fa-brands fa-css3-alt fa-flip" style="color: #005eff;"></i>&nbsp;CSS3</span>
+			<span><i class="fa-brands fa-bootstrap fa-flip" style="color: #a757b7;"></i>&nbsp;Bootstrap</span>
+			<span><i class="fa-brands fa-square-js fa-flip" style="color: #FFD43B;"></i>&nbsp;JavaScript</span>
+			<span><i class="fa-brands fa-react fa-spin" style="color: #72edfd;"></i>&nbsp;React.js</span>
+			<span><i class="fa-brands fa-node fa-fade" style="color: #1aa866;"></i>&nbsp;Node.js</span>
+			<span><i class="fa-brands fa-python fa-beat-fade" style="color: #FFD43B;"></i>&nbsp;Django</span>
+			<span><i class="fa-solid fa-database fa-beat" style="color: #46afff;"></i>&nbsp;PostgreSQL</span>
+			<span><i class="fa-brands fa-java fa-fade"></i>&nbsp;Java</span>
+			<span><i class="fa-solid fa-microchip fa-beat-fade" style="color: purple;"></i>&nbsp;APIs</span>
+			<span><i class="fa-brands fa-git-alt fa-flip" style="color: #df260a;"></i>&nbsp;Git</span>
+		</div>
+	</div>
+	<section class="about">
+		<h2 class="section-title">About Me</h2>
+		<div class="about-container">
+			<div class="about-content fadeInBottom">
+				<h3>Who Am I?</h3>
+				<p>Hello! I'm Ahmadjonov Mirjalol, a 17-year-old coder from Uzbekistan with a passion for web and mobile
+					development. Over the years, I've cultivated a robust skill set and have gained considerable
+					experience in creating dynamic and responsive applications.
+					My journey into the world of coding began at an early age, driven by a fascination with technology
+					and a desire to bring ideas to life through programming. I've since developed numerous projects that
+					showcase my abilities in both front-end and back-end development, as well as mobile applications.
+					With a keen eye for detail and a commitment to excellence, I strive to write clean, efficient, and
+					maintainable code. I am excited about the endless possibilities in the tech world and look forward
+					to contributing to
+					innovative projects. Let's create something amazing together!
+				</p>
+			</div>
+			<div class="about-img slideInBottom">
+				<img src="./assets/images/ava.jpg" alt="mirjalol ahmadjonov" class="zoomIn">
+			</div>
+			<canvas id="particle-canvas"></canvas>
+		</div>
+	</section>
+
+	<!-- PROJECTS -->
+	<section class="projects" id="projects">
+		<h2 class="section-title">PROJECTS</h2>
+		<div class="slide-container swiper">
+			<div class="slide-content">
+				<div class="card-wrapper swiper-wrapper">
+					<div class="card swiper-slide">
+						<div class="image-content">
+							<div class="card-image">
+								<img src="./assets/images/project.png" alt="project-image" class="card-img">
+							</div>
+						</div>
+						<div class="card-content">
+							<h4 class="name">PROJECT#1</h4>
+							<a href="#"><button class="btn">View More</button></a>
+						</div>
+					</div>
+					<div class="card swiper-slide">
+						<div class="image-content">
+							<div class="card-image">
+								<img src="./assets/images/project.png" alt="project-image" class="card-img">
+							</div>
+						</div>
+						<div class="card-content">
+							<h4 class="name">PROJECT#2</h4>
+							<a href="#"><button class="btn">View More</button></a>
+						</div>
+					</div>
+					<div class="card swiper-slide">
+						<div class="image-content">
+							<div class="card-image">
+								<img src="./assets/images/project.png" alt="project-image" class="card-img">
+							</div>
+						</div>
+						<div class="card-content">
+							<h4 class="name">PROJECT#3</h4>
+							<a href="#"><button class="btn">View More</button></a>
+						</div>
+					</div>
+					<div class="card swiper-slide">
+						<div class="image-content">
+							<div class="card-image">
+								<img src="./assets/images/project.png" alt="project-image" class="card-img">
+							</div>
+						</div>
+						<div class="card-content">
+							<h4 class="name">PROJECT#4</h4>
+							<a href="#"><button class="btn">View More</button></a>
+						</div>
+					</div>
+					<div class="card swiper-slide">
+						<div class="image-content">
+							<div class="card-image">
+								<img src="./assets/images/project.png" alt="project-image" class="card-img">
+							</div>
+						</div>
+						<div class="card-content">
+							<h4 class="name">PROJECT#5</h4>
+							<a href="#"><button class="btn">View More</button></a>
+						</div>
+					</div>
+					<div class="card swiper-slide">
+						<div class="image-content">
+							<div class="card-image">
+								<img src="./assets/images/project.png" alt="project-image" class="card-img">
+							</div>
+						</div>
+						<div class="card-content">
+							<h4 class="name">PROJECT#6</h4>
+							<a href="#"><button class="btn">View More</button></a>
+						</div>
+					</div>
+					<div class="card swiper-slide">
+						<div class="image-content">
+							<div class="card-image">
+								<img src="./assets/images/project.png" alt="project-image" class="card-img">
+							</div>
+						</div>
+						<div class="card-content">
+							<h4 class="name">PROJECT#7</h4>
+							<a href="#"><button class="btn">View More</button></a>
+						</div>
+					</div>
+					<div class="card swiper-slide">
+						<div class="image-content">
+							<div class="card-image">
+								<img src="./assets/images/project.png" alt="project-image" class="card-img">
+							</div>
+						</div>
+						<div class="card-content">
+							<h4 class="name">PROJECT#8</h4>
+							<a href="#"><button class="btn">View More</button></a>
+						</div>
+					</div>
+					<div class="card swiper-slide">
+						<div class="image-content">
+							<div class="card-image">
+								<img src="./assets/images/project.png" alt="project-image" class="card-img">
+							</div>
+						</div>
+						<div class="card-content">
+							<h4 class="name">PROJECT#9</h4>
+							<a href="#"><button class="btn">View More</button></a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="swiper-button-next swiper-navBtn"></div>
+			<div class="swiper-button-prev swiper-navBtn"></div>
+			<div class="swiper-pagination"></div>
+		</div>
+	</section>
+
+	<!-- SERVICES -->
 	<section class="services .scroll-animate" id="services">
 		<h2 class="section-title">Services</h2>
 		<div class="services-container">
@@ -146,9 +293,10 @@
 		</div>
 	</section>
 
+	<!-- CONTACT -->
 	<section class="contact" id="contact">
 		<h2 class="section-title">Contact <span>Me</span></h2>
-		<form action="">
+		<form action="mirjalol.uz">
 			<div class="input-box">
 				<input type="text" name="name" placeholder="Name" required>
 				<input type="email" name="email" placeholder="Email">
@@ -184,8 +332,10 @@
 			&copy; Mirjalol Ahmadjonov - 2024 &#124; All rights Reserved
 		</p>
 	</footer>
-	<script src="assets/js/scripts.js" defer></script>
-	<script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
 </body>
+<script src="assets/js/scripts.js" defer></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+<script src="assets/js/swiper-bundle.min.js"></script>
 
 </html>
