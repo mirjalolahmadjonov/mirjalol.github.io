@@ -578,7 +578,7 @@ section {
     }
 
     100% {
-        transform: translateX(100%);
+        transform: translateX(500%);
     }
 }
 
@@ -601,6 +601,9 @@ section {
 }
 
 @media (max-width: 768px) {
+    .section-title {
+        text-align: center;
+    }
     .about-content {
         width: 100%;
         text-align: center;
