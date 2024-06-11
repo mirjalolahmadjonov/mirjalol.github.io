@@ -224,6 +224,8 @@ section {
     color: #c8eeff;
     cursor: pointer;
     display: none;
+    padding-right: 0.5rem;
+    margin-right: 0.5rem
 }
 
 @media (max-width: 895px) {
