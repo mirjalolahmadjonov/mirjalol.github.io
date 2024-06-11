@@ -173,6 +173,7 @@ section {
     border-radius: 50%;
     box-shadow: 0 0 10px #c8eeff;
     margin-top: 0.5rem;
+    margin-left: 1rem
 }
 
 .logo img:hover {
@@ -218,8 +219,6 @@ section {
 }
 
 #menu-icon {
-    position: relative;
-    right: 2rem;
     font-size: 3rem;
     color: #c8eeff;
     cursor: pointer;
