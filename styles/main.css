@@ -105,6 +105,7 @@
 body {
     background-color: rgba(0, 0, 0, 0.98);
     color: #c8eeff;
+    overflow-x: hidden;
 }
 
 ::-webkit-scrollbar {
