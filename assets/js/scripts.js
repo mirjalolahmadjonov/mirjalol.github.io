@@ -1,11 +1,11 @@
-//RWD Navbar toggle
+//RWD NAVBAR TOGGLE
 const menuList = document.getElementById('menuList');
 
 function toggleMenu() {
 	menuList.classList.toggle('active');
 }
 
-//Hide when scroll
+//HIDE NAVBAR ON SCROLL
 let lastScrollY = window.scrollY;
 
 window.addEventListener('scroll', () => {
@@ -23,7 +23,7 @@ window.addEventListener('scroll', () => {
 
 const navbarLinks = document.querySelectorAll('.navbar a');
 
-// Highlight the active section
+// HIGHLIGHT THE SECTION
 function highlightNavbarLink() {
 	const scrollPosition = window.scrollY;
 	document.querySelectorAll('section').forEach((section) => {
@@ -44,7 +44,7 @@ window.addEventListener('scroll', highlightNavbarLink);
 
 highlightNavbarLink();
 
-// Typewriter
+// TYPEWRITER
 
 document.addEventListener('DOMContentLoaded', function () {
 	const phrases = [
@@ -83,7 +83,7 @@ document.addEventListener('DOMContentLoaded', function () {
 	typeWriter();
 });
 
-// PARICLES
+// PARTICLES
 
 particlesJS("particles-js", {
 	"particles": {
@@ -201,7 +201,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 	camera.position.z = 5;
 
-	// Particle System
+	// PARTICLES SYSTEM
 	const particles = new THREE.BufferGeometry();
 	const particleCount = 2000; 
 	const positions = new Float32Array(particleCount * 3);
@@ -228,7 +228,7 @@ document.addEventListener("DOMContentLoaded", function () {
 	const particleSystem = new THREE.Points(particles, particleMaterial);
 	scene.add(particleSystem);
 
-	// Mouse Interaction
+	// MOUSE INTERACTION
 	const mouse = new THREE.Vector2();
 	document.addEventListener('mousemove', (event) => {
 		mouse.x = (event.clientX / window.innerWidth) * 2 - 1;
@@ -302,7 +302,7 @@ var swiper = new Swiper(".slide-content", {
 },
 });
 
-// skill scroll
+// SKILLS SCROLL
 
 const skillsContainer = document.querySelector('.skills-container');
 
@@ -335,7 +335,7 @@ skillsContainer.addEventListener('mousemove', (e) => {
     skillsContainer.scrollLeft = scrollLeft - walk;
 });
 
-// Throttle function to limit the rate at which a function is called
+// FRAME RATE LIMIT
 function throttle(func, limit) {
     let lastFunc;
     let lastRan;
@@ -357,7 +357,7 @@ function throttle(func, limit) {
     }
 }
 
-// Function to check if an element is in the viewport
+// CHECK IF ELEMENT IN VIEWPORT
 function isElementInViewport(el) {
     const rect = el.getBoundingClientRect();
     return (
@@ -368,7 +368,7 @@ function isElementInViewport(el) {
     );
 }
 
-// Main function to check and update animation play state
+// ANIMATION PLAY STATE CHECK
 function checkAnimations() {
     const allAnimations = document.querySelectorAll('.fadeIn, .fadeInLeft, .fadeInRight, .fadeInBottom, .zoomIn');
 
@@ -381,8 +381,8 @@ function checkAnimations() {
     });
 }
 
-// Add a throttled scroll event listener
+// SCROLL EVENT LISTENER
 window.addEventListener('scroll', throttle(checkAnimations, 100));
 
-// Initial check
+// CHECK ALL ANIMATIONS
 checkAnimations();
